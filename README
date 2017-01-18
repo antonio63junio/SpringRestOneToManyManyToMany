@@ -1,7 +1,8 @@
 
-Proyecto con las siguientes caracteristicas:
+Proyecto basado en anotaciones con spring rest, hibernate y angularjs. Este proyecto tiene como objetivo transformar el proyecto descrito
+abajo hacia una relacion OneToMany ManyToMany. A fecha de 17 de enero de 2017, este proyecto funciona con una relacion
+OneToMany ManyToOne con las entidades empleado y telefono. 
 
-1) Proyecto spring rest + hibernate + angularjs que no utiliza xml, solo anotaciones.
 
 1) Crea base de datos MySQL a partir de los modelos definidos. 
 
