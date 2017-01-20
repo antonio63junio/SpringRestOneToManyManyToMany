@@ -10,6 +10,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 
 import javax.persistence.Table;
@@ -33,7 +34,7 @@ public class Phone implements Serializable {
 	private String contactnumber;
 	
 	@JsonIgnore
-	@ManyToOne(fetch = FetchType.LAZY ,cascade = CascadeType.ALL)
+	@ManyToMany(fetch = FetchType.LAZY ,cascade = CascadeType.ALL)
 	@JoinColumn(name = "EMPLOYEE_ID", nullable=false)
 	//@JsonBackReference
 	private Employee employee;
